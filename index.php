@@ -18,13 +18,16 @@ echo "</pre>";
 if (isset($_GET['url'])) {
 	
 	$var = $_GET['url'];
+
 	$numero = intval(preg_replace('/[^0-9]+/','',$var),10);
 	/* CONFIGURANDO RUTAS */
 	if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 		switch ($var) {
 			case 'productos':
 				$datos = allProductos();
+				echo "<pre>";
 				echo json_encode($datos);
+				echo "<pre>";
 				http_response_code(200);
 				break;
 			case 'productos/'.$numero:
@@ -32,13 +35,15 @@ if (isset($_GET['url'])) {
 				if (empty($datos)) {
 					echo "No existe registro";
 				}else{
+					echo "<pre>";
 					echo json_encode($datos);
+					echo "<pre>";
 				}
 				http_response_code(200);
 				break;
 			default:
 				echo "No existe la ruta..";
-				http_response_code(200);
+				http_response_code(404);
 				break;
 		}
 	}elseif($_SERVER['REQUEST_METHOD'] == 'POST'){
