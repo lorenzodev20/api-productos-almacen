@@ -44,5 +44,11 @@ if ($conexion->connect_error) {
 		});
 		return $array;
 	}
+
+	function escaparCadenas($cadena, &$conexion = null)
+	{
+		if (!$conexion)global $conexion;
+		return $conexion->real_escape_string($cadena);
+	}
 }
 ?>
