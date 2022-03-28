@@ -1,6 +1,6 @@
 <?php
 
-$servername = "localhost";
+$servername = "185.28.21.204";
 $username = "u751235309_almacenes_api";
 $password = "Z]fccwZBi5";
 $database = "u751235309_almacenes_api";
