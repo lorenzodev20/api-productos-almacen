@@ -5,7 +5,8 @@ require_once  __DIR__.'/src/helpers.php';
 header('Content-Type: application/json');
 header("Access-Control-Allow-Methods: PUT, POST, GET, DELETE");
 
-ini_set('error_reporting', E_ALL);
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 
 /* Si existe la variable get */
 if (isset($_GET['url'])) {
