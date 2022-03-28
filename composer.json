@@ -1,0 +1,13 @@
+{
+    "name": "loren/api-productos-almacen",
+    "description": "Api de ejmplo para crud de productos",
+    "authors": [
+        {
+            "name": "Lorenzo Rojo",
+            "email": "lorenzorojo12@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-mbstring": "*"
+    }
+}
