@@ -121,29 +121,7 @@ if (isset($_GET['url'])) {
 
 		http_response_code(405);
 	}
-} else { ?>
-	<link rel="stylesheet" href="public/css/estilos.css">
-
-	<body>
-		<div class="container">
-			<h1>MetaData</h1>
-			<div class="divbody">
-				<p>Productos</p>
-				<code>
-					POST: /productos
-				</code>
-				<code>
-					PUT: /productos
-				</code>
-				<code>
-					GET: /productos
-					<br>
-					GET: /Productos/$id
-				</code>
-				<code>
-					DELETE: /productos/$id
-				</code>
-			</div>
-		</div>
-	</body>
-<?php } ?>
+}else{
+	header('location:documentacion.html');
+	// require_once 'documentacion.html';
+}
