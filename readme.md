@@ -1,4 +1,4 @@
-## Mi primera API contruida en PHP
+## Mi primera API construida en PHP
 
 Documentacion API en postman:
 https://documenter.getpostman.com/view/18208862/UVyn3Jvp
