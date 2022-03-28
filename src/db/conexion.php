@@ -1,9 +1,15 @@
 <?php
+
 $servername = "localhost";
-$username = "root";
-$password = "";
-$database = "db_almacenes";
+$username = "u751235309_almacenes_api";
+$password = "Z]fccwZBi5";
+$database = "u751235309_almacenes_api";
 $port 	="3306";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $database = "db_almacenes";
+// $port 	="3306";
 
 // Create connection
 $conexion = new mysqli($servername, $username, $password, $database, $port);
